@@ -1,4 +1,4 @@
-# image-audit
+# Minetest Image Audit
 Recursively scans a directory and compares crc's of images in a Minetest mod, 
 game or texture pack to find duplicates, and possible copyright infringing 
 images from Minecraft.
