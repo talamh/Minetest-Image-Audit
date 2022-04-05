@@ -32,6 +32,7 @@ def check_duplicates(images: list) -> None:
     """
 
     processed = {}
+    print('Duplicate Check:')
 
     for i in images:
         with open(i, "rb") as img:
