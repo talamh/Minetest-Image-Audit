@@ -8,7 +8,7 @@ formats. The highest Minecraft release using each format was used to generate
 the crc list, namely:
 
 |Format   |Release|	
-|---------|--------|
+|:-------:|--------|
 |1 |JE 1.8.9|
 |2 |JE 1.10.2|
 |3 |JE 1.12.2|
@@ -18,9 +18,12 @@ the crc list, namely:
 |7 |JE 1.17.1|
 |8 |JE 1.18.2|
 
-Currently only png files are checked, and are only checked via crc so images 
-that have been optimized for size will not be detected as originating from 
-Minecraft. 
+Currently only png files are checked, as it is the crc of the images pixel data
+that is checked, images that have been optimized for file size using trimage etc
+should also be detected.
 
 ## usage
-`$ python audit.py -i directory`
+```bash
+$ python audit.py -i directory
+```
+
